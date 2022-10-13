@@ -1,1 +1,1 @@
-### persona Website built by the python Django framework
+### Personal Website built by the python django framework
