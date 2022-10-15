@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  box-sizing: border-box;
+}
+
 /*landing page cc */
 .landing-page {
   width: 100%;
@@ -49,7 +53,9 @@
 /*landing content */
 
 .landing-content {
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .base-div {
@@ -68,5 +74,84 @@
 .bar {
   width: 10%;
   height: 2px;
-  background-color: blueviolet;
+  background-color: orangered;
+}
+
+.hire {
+  margin-top: 30px;
+  background-color: inherit;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: blueviolet;
+}
+
+.hire-link {
+  text-decoration: none;
+}
+
+.brand-image {
+  padding-top: 20px;
+  width: 50%;
+  margin: auto;
+  background-color: inherit;
+}
+
+.jeff-image {
+  width: 70%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .jeff-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .brand-image {
+    padding-top: 0px;
+    width: 60%;
+    margin: auto;
+    background-color: inherit;
+    margin-right: 10%;
+  }
+
+  .base-div {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    align-content: center;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  .landing-page {
+    height: 90vh;
+  }
+}
+
+/* services section */
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.service-list {
+  width: 20%;
+  height: auto;
+  margin: auto;
+  border: 1px solid grey;
+  border-style: none;
 }
