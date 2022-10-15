@@ -6,10 +6,11 @@
 .landing-page {
   width: 100%;
   height: 100vh;
-  background-color: #c6f3f3;
+  background-color: #e6f0ff;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-/* nav-bar*/
+/* nav-bar links*/
 .nav-link {
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
@@ -19,6 +20,53 @@
   margin-left: 20%;
 }
 
-.home {
-  color: blueviolet;
+.navbar-brand {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.sub-brand {
+  color: gray;
+}
+
+/* navbar icons */
+[class*="fa-"] {
+  border: 1px solid gray;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+  font-size: small;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.navbar-icons {
+  margin-left: 90px;
+}
+
+/*landing content */
+
+.landing-content {
+  width: 100vw;
+}
+
+.base-div {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  align-content: center;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.brand-name {
+  font-weight: bold;
+}
+
+.bar {
+  width: 10%;
+  height: 2px;
+  background-color: blueviolet;
 }
