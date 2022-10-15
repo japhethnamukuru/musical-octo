@@ -12,6 +12,7 @@ body {
   height: 100vh;
   background-color: #e6f0ff;
   font-family: 'Courier New', Courier, monospace;
+  border-bottom: 1px solid gray;
 }
 
 /* nav-bar links*/
@@ -233,6 +234,28 @@ body {
   font-weight: normal;
   font-family: 'Courier New', Courier, monospace;
   color: gray;
+}
+
+/* footer section */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;  
+  background-color: rgb(3, 3, 49);
+  margin-top: 5%;
+}
+
+.footer-content {
+  width: 25%;
+  height: 10%;
+  color: wheat;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: smaller;
+  padding-left: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: inherit;
+  border-left: 1px solid gray;
 }
 
 /* for mobile phones */
