@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+/*landing page cc */
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #c6f3f3;
+}
+
+/* nav-bar*/
+.nav-link {
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+}
+  
+.navbar-nav {
+  margin-left: 20%;
+}
+
+.home {
+  color: blueviolet;
+}
