@@ -16,6 +16,16 @@ body {
 }
 
 /* nav-bar links*/
+
+nav {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.navbar-custom {
+  background-color: #e6f0ff;
+}
+
 .nav-link {
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
@@ -119,7 +129,7 @@ body {
 .title-header-caption {
   text-transform: uppercase;
   font-family: 'Courier New', Courier, monospace;
-  color: gray;
+  color: orangered;
 }
 
 .title-bars {
@@ -224,7 +234,7 @@ body {
   text-transform: capitalize;
   text-align: center;
   font-weight: bold;
-  color: blueviolet;
+  color: black;
   margin-top: -3%;
 }
 
@@ -238,11 +248,25 @@ body {
 
 /* footer section */
 footer {
+  background-color: rgb(3, 3, 49);
+  margin-top: 5%;
+}
+.footer-body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;  
   background-color: rgb(3, 3, 49);
   margin-top: 5%;
+}
+
+.footer-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ft-header {
+  padding-top: 20x;
+  padding-bottom: 20px;
 }
 
 .footer-content {
@@ -255,9 +279,39 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: inherit;
-  border-left: 1px solid gray;
+  border-left: 1px solid orangered;
 }
 
+.footer-content a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.footer-content a:hover {
+  color: orangered;
+}
+
+.footer-content li {
+  list-style: none;
+  margin-left: -12%;
+}
+
+.footer-content:first-of-type {
+  border-left: none;
+}
+
+.footer-brand {
+  color: orangered;
+}
+
+.copyright {
+  color: wheat;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: smaller;
+  padding-top: 10px;
+  margin-top: 3%;
+}
 /* for mobile phones */
 @media only screen and (max-width: 600px) {
   .landing-content {
@@ -329,6 +383,15 @@ footer {
 
   .blog {
     width: 100%;
+  }
+
+  .footer-body {
+    flex-wrap: wrap;
+  }
+
+  .footer-content {
+    width: 100%;
+    border-left: none;
   }
   
 }

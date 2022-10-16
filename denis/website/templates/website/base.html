@@ -12,7 +12,7 @@
     </head>
     <body>
       <div class="landing-page">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-custom fixed-top navbar-expand-lg">
             <div class="container-fluid">
               <i class="fa-brands fa-staylinked"></i>
               <a class="navbar-brand" href="#"><span class="sub-brand">Deni</span>-soft</a>
@@ -22,10 +22,10 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#"><span class="current" style="color: #3385ff;">Home</span></a>
-                  <a class="nav-link" href="#">Services</a>
-                  <a class="nav-link" href="#">Blog</a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#services">Services</a>
+                  <a class="nav-link" href="#blog">Blog</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#footer">Contact</a>
                   <a class="nav-link" href="#">Hire me</a>
                   <div class="navbar-icons">
                     <i class="fa-brands fa-linkedin-in"></i>
@@ -53,7 +53,7 @@
         </div>
         <div class="title-header">
           <div class="title-bars"></div>
-          <div class="title-header-caption">Services</div>
+          <div class="title-header-caption" id="services">Services</div>
           <div class="title-bars"></div>
         </div>
         <div class="services">
@@ -62,7 +62,7 @@
             <div class="service-caption">Health
             <p>Health living tips.</p>
             </div>
-            <div class="service"><a href="#">Health</a>
+            <div class="service"><a href="{% url 'website:health' %}">Health</a>
               <i class="fa-solid fa-right-long"></i>
             </div>
           </div>
@@ -71,7 +71,7 @@
             <div class="service-caption">Fitness
               <p>Get expert advice weight reduction.</p>
             </div>
-            <div class="service"><a href="#">Fitness</a>
+            <div class="service"><a href="{% url 'website:fitness' %}">Fitness</a>
               <i class="fa-solid fa-right-long"></i>
             </div>
           </div>
@@ -80,7 +80,7 @@
             <div class="service-caption">Marketing
               <p>Connect your business to the world thorough digital marketing.</p>
             </div>
-            <div class="service"><a href="#">Marketing</a>
+            <div class="service"><a href="{% url 'website:marketing' %}">Marketing</a>
               <i class="fa-solid fa-right-long"></i>
             </div>
           </div>
@@ -89,14 +89,14 @@
             <div class="service-caption">Mentorship
               <p>Get inspired daily through our program</p>
             </div>
-            <div class="service"><a href="#">Mentorship</a>
+            <div class="service"><a href="{% url 'website:mentorship' %}">Mentorship</a>
               <i class="fa-solid fa-right-long"></i>
             </div>
           </div>
         </div>
         <div class="title-header">
           <div class="title-bars"></div>
-          <div class="title-header-caption">Blog</div>
+          <div class="title-header-caption" id="blog">Blog</div>
           <div class="title-bars"></div>
         </div>
         <div class="blog-header-caption">
@@ -138,7 +138,7 @@
         </div>
         <div class="title-header">
           <div class="title-bars"></div>
-          <div class="title-header-caption">About</div>
+          <div class="title-header-caption" id="about">About</div>
           <div class="title-bars"></div>
         </div>
         <div class="about-header">
@@ -151,11 +151,49 @@
 Being a freelance requires more creativity. The majority of customers are interested in your personality as much as in your works. Andrew Reifman decided that listing his projects, skills, and experiences is rather boring. Instead, he chose a couple of fun facts and cartoon graphics for the “About” page. You find out who Andrew actually is, not just what his works look like.
           </p>
         </div>
-        <footer class="footer">
-          <div class="footer-content">Lorem<br> Ipsum Dolor<br> sit amet</div>
-          <div class="footer-content">Lorem<br> Ipsum Dolor<br> sit amet</div>
-          <div class="footer-content">Lorem<br> Ipsum Dolor<br> sit amet</div>
-          <div class="footer-content">Lorem<br> Ipsum Dolor<br> sit amet</div>
+        <footer class="footer" id="footer">
+          <div class="footer-header"></div>
+          <div class="footer-body">
+            <div class="footer-content">
+              <p><span class="footer-brand">Deni-soft Inc</span>,<br>Designed and built with all the love in the world by<br><span class="footer-brand">Japheth</span>.</p>
+            </div>
+            <div class="footer-content">
+              <p><span class="footer-brand">Links</span></p>
+              <ul>
+                <li><a href="#services">services</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#about">about</a></li>
+              </ul>
+            </div>
+            <div class="footer-content">
+              <p><span class="footer-brand">Contact</span></p>
+              <ul>
+                <li><a href="#">Japheth</a></li>
+                <li><a href="#">+254 795002433</a></li>
+                <li><a href="#">japhethnamukuru@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="footer-content">
+              <p><span class="footer-brand">Contact</span></p>
+              <ul>
+                <li><a href="#">Denis</a></li>
+                <li><a href="#">+254 711866778</a></li>
+                <li><a href="#">denonamukuru@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-header ft-header">
+            <div id="copyright" class="copyright"></div>
+            <script>
+              const paragraph = `
+              <p>
+                Copyright &copy; ${new Date().getFullYear()} deni-soft Inc, All Rights Reserved.
+              </p>
+            `;
+
+              document.getElementById('copyright').innerHTML = paragraph;
+            </script>
+          </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <script src="{% static 'website/js/index.js' %}"></script>
